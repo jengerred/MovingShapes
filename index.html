@@ -36,19 +36,18 @@
 var positionX = 0;
 var positionY = 0;
 
-var positionX2 = 0;
-var positionY2 = 0;
+var positionX2 = 20;
+var positionY2 = 200;
 
-var positionX3 = 0;
-var positionY3 = 0;
+var positionX3 = 40;
+var positionY3 = 40;
 
-var velocity = 100;
-var velocity2 = 100;
-var velocity3 = 100;
+var velocity = 20;
+var velocity2 = 20;
+var velocity3 = 20;
 
 var reverse = false;
-var reverse2 = false;
-var reverse3= false;
+
 
 var ball = document.getElementById("ball");
 var ball2 = document.getElementById("ball2");
@@ -58,10 +57,10 @@ var ball3 = document.getElementById("ball3");
 
 function moveBall(){
   var Xmin = 0;
-  var Xmax = 500;
+  var Xmax = 600;
 
   var Ymin = 0;
-  var Ymax = 500;
+  var Ymax = 600;
 
 
 
@@ -128,10 +127,10 @@ if (reverse) {
 }
 function moveBall3(){
   var Xmin = 0;
-  var Xmax = 700;
+  var Xmax = 600;
 
   var Ymin = 0;
-  var Ymax = 700;
+  var Ymax = 600;
 
 
 
@@ -162,7 +161,7 @@ if (reverse) {
   
 }
 setInterval(moveBall, 200);
-setInterval(moveBall2, 250);
+setInterval(moveBall2, 200);
 setInterval(moveBall3, 200);
 
 
